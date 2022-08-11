@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>crypto-monnaies</title>
+</head>
+<body>
+
+<!-- .container is main centered wrapper -->
+
+  <div class="container">
+    <div class="crypto-monnaies">
+      <button id="currency" onclick="getCurrency('usd')">USD</button>
+      <button id="currency" onclick="getCurrency('cad')">CAD</button>
+    </div>
+
+    <!-- barre de recherche -->
+    <input type="text" id="crypto" placeholder="Cherchez une monnaie"></input>
+    <!-- tableau de suggestions -->
+    <table id="resultsTable"></table>
+    
+
+    <!-- date -->
+    <h4>choissisez une date de comparaison</h4>
+    <input id="date" type="date" onChange="date()">
+
+    <!-- cards -->
+    <div id="cards"></div>
+
+      <!-- end of container  -->
+  </div> 
+
+
+
+  <script src="crypto.js"></script>
+  <script src="app.js"></script> 
+</body>
+</html>
